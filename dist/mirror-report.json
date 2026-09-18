@@ -1,0 +1,33 @@
+{
+  "source": "https://franziskaiseli.com/",
+  "generatedAt": "2026-09-18T07:20:50.099Z",
+  "pagesDiscovered": 112,
+  "assetsDiscovered": 383,
+  "urlsFetched": 495,
+  "failures": [
+    {
+      "url": "https://franziskaiseli.com/wp-json/oembed/1.0/embed",
+      "error": "400 Bad Request"
+    },
+    {
+      "url": "https://franziskaiseli.com/wp-content/uploads/2025/04/FI_The-Brand-Alchemy-Method&",
+      "error": "404 Not Found"
+    },
+    {
+      "url": "https://franziskaiseli.com/wp-content/plugins/diviflash/public/css/lib/..../img/sort_asc_disabled.png",
+      "error": "404 Not Found"
+    },
+    {
+      "url": "https://franziskaiseli.com/wp-content/plugins/diviflash/public/imgimg/sort_asc.png",
+      "error": "404 Not Found"
+    },
+    {
+      "url": "https://franziskaiseli.com/wp-comments-post.php",
+      "error": "405 Method Not Allowed"
+    },
+    {
+      "url": "https://franziskaiseli.com/wp-content/uploads/2024/04/EO-header.png",
+      "error": "The operation was aborted due to timeout"
+    }
+  ]
+}
