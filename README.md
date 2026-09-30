@@ -43,6 +43,11 @@ For a Wrangler deployment, secrets can be added with `npx wrangler pages secret 
 
 ## Notes
 
+- Homepage and Dangerously Alive copy live in `content/`; `scripts/apply-copy.mjs` applies them after each mirror build. Run `npm run update:copy` to update the existing snapshot without downloading the source site again.
+- The copy source is [Franziska Iseli website](https://docs.google.com/document/d/1koNNnm4srgYjW2ekbih9OARNCHm_rTIXETYgL7Tr5hw/edit), read on 30 September 2026. Adventure photos are stored locally in `public/assets/adventure/` from the supplied Drive folder.
+- The final offer in the source supersedes the earlier draft: 111 signed copies at A$39 including shipping, official release 11 January 2027, pre-Christmas cut-off 10 December 2026. The obvious “Unook” typo is corrected to “Unhook”.
+- Stripe checkout and Brevo signup are pending. The book page links to contact while ordering is unavailable; newsletter fields are disabled with an explicit coming-soon message. No payment or subscription is submitted. Reader resources, Amazon purchase links, reader stories, endorsements and bulk ordering can be added when supplied; the resource link in the doc is a reference to another author's site.
+
 - Re-run `npm run build` whenever the source site changes; `dist/mirror-report.json` records the snapshot result.
 - Two unusually slow source assets are checked into `public/` as build fallbacks. The oversized EO header is web-optimized there so every Cloudflare asset remains below the platform’s per-file limit.
 - Public same-origin pages and assets are served locally from Cloudflare. External social, video, retail, and Basic Bananas links remain external.

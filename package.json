@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/mirror.mjs",
+    "update:copy": "node scripts/apply-copy.mjs",
     "preview": "npx wrangler pages dev dist",
     "deploy": "npx wrangler pages deploy dist"
   },

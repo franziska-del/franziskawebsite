@@ -1,6 +1,7 @@
 import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { applyCopy } from "./apply-copy.mjs";
 
 const SOURCE = new URL("https://franziskaiseli.com/");
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -171,6 +172,7 @@ pageUrls.add(SOURCE.href);
 await drainQueue();
 await copyPublicFiles();
 await injectCloudflareEnhancements();
+await applyCopy();
 
 const report = {
   source: SOURCE.href,

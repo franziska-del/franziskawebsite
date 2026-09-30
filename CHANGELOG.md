@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0.1] - 2026-09-30
+
+- Updated the homepage with the new Dangerously Alive, keynote, biography, projects, newsletter and contact copy.
+- Added the Dangerously Alive book page and a feature in the existing book catalogue.
+- Added supplied adventure photography and persistent copy overrides to the mirror build.
+- Marked checkout and newsletter signup as pending until Stripe and Brevo are supplied.
+
 ## [1.0.0.0] - 2026-09-18
 
 ### Added
